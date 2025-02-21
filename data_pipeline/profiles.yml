@@ -1,0 +1,13 @@
+data_pipeline:
+  outputs:
+    dev:
+      account: hcaawun-fc10922
+      database: dbt_db
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: dbt_role
+      schema: dbt_schema
+      threads: 10
+      type: snowflake
+      user: mouradgh
+      warehouse: dbt_wh
+  target: dev
